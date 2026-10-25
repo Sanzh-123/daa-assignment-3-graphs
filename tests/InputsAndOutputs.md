@@ -43,5 +43,3 @@ python tools/run.py --input tests/my_cases.jsonl
 * **Input:** `{"task":"dag","n":3,"source":0,"edges":[[0,1,2],[1,2,3],[0,2,10]]}`
 * **Expected & Actual Output:** `{"acyclic":true,"distance":[0,2,5],"parent_edge":[-1,0,1]}`
 * **Justification:** Shortest path to vertex 2 goes through vertex 1 with total distance $2 + 3 = 5$, via edge IDs 0 and 1.
-
-```
